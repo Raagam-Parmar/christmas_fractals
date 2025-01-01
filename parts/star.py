@@ -78,6 +78,7 @@ pattern(
 )
 
 # save the star as a transparent image
+os.makedirs('images/')
 output_path = os.path.join(os.getcwd(), 'images/golden_star.png')
 pygame.image.save(background, output_path)
 

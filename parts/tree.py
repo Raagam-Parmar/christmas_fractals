@@ -74,6 +74,7 @@ def tree(surface: pygame.surface, points: int, color: list[int]):
 tree(background, 5_000_000, DARK_GREEN)
 
 # save the star as a transparent image
+os.makedirs('images/')
 output_path = os.path.join(os.getcwd(), 'images/tree.png')
 pygame.image.save(background, output_path)
 
